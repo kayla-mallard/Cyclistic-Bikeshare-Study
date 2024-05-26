@@ -1,0 +1,159 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Cyclistic Rideshare Case Study},
+  pdfauthor={Kayla Mallard},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Cyclistic Rideshare Case Study}
+\author{Kayla Mallard}
+\date{2024-05-26}
+
+\begin{document}
+\maketitle
+
+\subsection{Summary Analysis for Cyclistic
+Bikeshare}\label{summary-analysis-for-cyclistic-bikeshare}
+
+Through my analysis, it is clear that annual members of the bike-share
+service use the service more often, and casual members typically use the
+bikeshare service less often. The bike-share service's most busy days
+range from Monday-Friday for members, while Saturday and Sunday are most
+popular among casual riders.
+
+It would seem that members use the service during the week for work
+related travel. Casual riders use the service less often and seemingly
+use the service for casual rides or running quick errands.
+
+Tuesday is the most popular day of the week, followed by Thursday, then
+Friday. Surprisingly, weekends are the least popular. Saturday is the
+least popular day among both casual riders and members.
+
+\subsection{My Top 3 Recommendations Based On My
+Analysis}\label{my-top-3-recommendations-based-on-my-analysis}
+
+\paragraph{Recommendation 1:}\label{recommendation-1}
+
+Incentives should be offered to encourage casual riders to become annual
+members. These incentives could target different groups based on the
+incentive. Becoming an annual member could save money for those more
+frugal or on a budget, becoming a member can encourage others to use the
+service more often as a form of physical activity, and using a
+bike-share service as a daily source of transportation is better for the
+environment, which may be important to environmentally conscious riders.
+Creating an incentive or discount that encourages riders to use the
+bike-share service more during weekends could also be helpful.
+
+\paragraph{Recommendation 2:}\label{recommendation-2}
+
+Create an ad set aimed towards the working class in areas the bike-share
+service is available or create a promotion targeting students and
+workers. This would boost the visibility of the bike-share service.
+Increasing membership awareness should be a new priority because members
+are shown to use the service more regularly.
+
+\paragraph{Recommendation 3:}\label{recommendation-3}
+
+Survey both annual members and casual riders. Inquire about their
+satisfaction with the bike-share service, what would encourage a casual
+rider to become a member, why members chose to become members, why
+riders use this service, and any recommendations they may have.
+
+\subsection{How do annual members and casual riders use Cyclistic bikes
+differently?}\label{how-do-annual-members-and-casual-riders-use-cyclistic-bikes-differently}
+
+These are the key findings found about the differences between annual
+members and casual riders throughout the year, based on the data
+provided from 2019-2020.
+
+\begin{itemize}
+\tightlist
+\item
+  Annual members typically ride more during the week and less during
+  weekends.
+\item
+  Casual riders ride more often on weekends.
+\item
+  Annual members use the bike-share service more often than casual
+  riders, while casual riders typically take less trips but more often
+  ride longer distances.
+\item
+  Annual members seemingly use the bike-share service for work-related
+  travel because they ride more often throughout the week and less
+  during the weekend.
+\item
+  However, Members still use the service more often than casual members.
+\item
+  Casual members seemingly ride more spontaneously, for fun, or to run
+  quick errands- more often during weekends and less during week days.
+\item
+  Most popular days in order are Tuesday, Thursday, and Friday.
+\item
+  The least popular day is Saturday, then Sunday.
+\end{itemize}
+
+The data has been made available by Motivate International Inc.~under
+this \href{https://divvybikes.com/data-license-agreement}{license}.
+
+\end{document}
